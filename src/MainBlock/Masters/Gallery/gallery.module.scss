@@ -1,0 +1,23 @@
+.galleryWrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  height: 40vh;
+  text-align: center;
+  font-size: 18px;
+  //background: #e11313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopPhoto{
+  width: 100px;
+}

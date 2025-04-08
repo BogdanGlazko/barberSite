@@ -1,0 +1,56 @@
+@use '../../../styles/globals.scss';
+
+.masterImage {
+  max-width: 35vw;
+  height: 50%;
+  box-shadow: 0px 2px 11px 3px #252525;
+  border-radius: 10px;
+  filter: brightness(75%);
+}
+
+
+.swiper-slide{
+  width: fit-content;
+}
+
+
+//.masterCard {
+//  height: 75vh; /* высота карточки */
+//  margin: 3% 0 0 3%;
+//}
+.mySwiper{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.masterPhoto {
+  border-radius: 30px;
+  width: 23vw;
+  margin-left: 4%;
+}
+
+.masterName {
+  margin-top: -17%;
+  color: #dcdcdc;
+  margin-left: 0% ;
+  font-size: 4vw;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  filter: brightness(90%);
+  font-weight:300;
+  @extend .unboundFontLight
+}
+
+@media (min-width: 1028px) {
+  .masterImage {
+    max-width: 21vw;
+  }
+}
+@media (min-width: 1440px) {
+  .masterImage {
+    max-width: 18vw;
+  }
+}

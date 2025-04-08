@@ -1,0 +1,74 @@
+@use '../../styles/globals.scss';
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 5%;
+  height: 80vh;
+  width: 100%;
+  background: linear-gradient(0deg, rgb(15 15 15) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgb(15 15 15) 100%), url(/src/assets/barberPhotos/IMG_1058.jpg) no-repeat center / cover;
+}
+
+.sliderWrapper {
+  margin-left: 5%;
+  width: 75%;
+}
+
+.title {
+  font-size: 8vw;
+  color: #ececed;
+  margin: -12% 0 0% 0;
+  @extend .unboundFont
+}
+
+.mastersList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: center;
+}
+
+.masterCard {
+  min-width: 25vw;
+  background: #00000094;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgb(26 26 26 / 40%);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    width: 30vw;
+    height: auto;
+  }
+
+  .info {
+    padding: 15px;
+  }
+
+  .name {
+    font-size: 1.5rem;
+    color: #f3f3f3;
+    margin-bottom: 5px;
+  }
+
+  .experience {
+    font-size: 1rem;
+    color: #777;
+  }
+}
+
+.shopPhotoContainer {
+  margin-top: 20%;
+  text-align: center;
+
+  img {
+    width: 100%;
+  }
+}

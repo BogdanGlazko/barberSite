@@ -1,0 +1,96 @@
+@use '../../styles/globals.scss';
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // 3 столбца
+  grid-template-rows: repeat(3, auto); // 3 строки, высота по контенту
+  grid-template-areas:
+    "img1 img2 img3"
+    "img6 img6 img6"
+    "img5 img5 img4";
+  gap: 10px;
+  padding: 0 15%;
+  background-color: #1b1b1b;
+}
+
+.image:nth-child(1) { grid-area: img1; }
+.image:nth-child(2) { grid-area: img2; }
+.image:nth-child(3) { grid-area: img3; }
+.image:nth-child(4) { grid-area: img4; }
+.image:nth-child(5) { grid-area: img5; }
+.image:nth-child(6) { grid-area: img6; }
+
+.image img {
+  //width: 100%; // Чтобы изображения занимали всю выделенную ячейку
+  //height: 60vh;
+  object-fit: cover; // Чтобы картинки не растягивались
+}
+
+
+.title {
+  text-align: center;
+  font-size: 8vw;
+  color: #ececed;
+  margin: 10% 0 0 0;
+  @extend .unboundFont
+}
+//
+///* Определяем области для больших экранов */
+//@media (min-width: 1024px) {
+//  .wrapper {
+//    grid-template-areas:
+//      "img1 img1 img1"
+//      "img2 img3 img3"
+//      "img4 img4 img4";
+//  }
+//
+//  .image:nth-child(1) {
+//    grid-area: img1;
+//  }
+//
+//  .image:nth-child(2) {
+//    grid-area: img2;
+//  }
+//
+//  .image:nth-child(3) {
+//    grid-area: img3;
+//  }
+//
+//  .image:nth-child(4) {
+//    grid-area: img4;
+//  }
+//}
+//
+///* Перестройка сетки на планшетах */
+//@media (max-width: 1023px) {
+//  .wrapper {
+//    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+//    grid-template-areas:
+//      "img1 img1"
+//      "img2 img3"
+//      "img4 img4";
+//  }
+//}
+//
+///* Перестройка сетки на мобильных устройствах */
+//@media (max-width: 600px) {
+//  .wrapper {
+//    grid-template-columns: 1fr; /* Одна колонка */
+//    grid-template-areas:
+//      "img1"
+//      "img2"
+//      "img3"
+//      "img4";
+//  }
+//}
+
+.image {
+  height: 40vh;
+  background: blue;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

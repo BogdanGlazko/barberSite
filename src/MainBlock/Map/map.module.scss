@@ -1,0 +1,91 @@
+ @use '../../styles/globals.scss';
+
+  .headerAdress{
+    margin: 10% 0 -10% 10%;
+    font-size: 3.5vw;
+    @extend .unboundFont
+  }
+
+
+.mapWrapper {
+  width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+  transition: none;
+  filter: brightness(100%);
+  background: linear-gradient(0deg, rgb(15, 15, 15) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgb(15, 15, 15) 100%), url(/src/assets/barberPhotos/g1.jpg) no-repeat center / cover;
+}
+
+ .gMapWrapper{
+   background: linear-gradient(0deg, rgb(15, 15, 15) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgb(15, 15, 15) 100%);
+ }
+
+.mapWidthWrapper{
+  //margin: 10% 0 0 15%;
+  //width: 70vw;
+}
+
+
+header {
+  text-align: center;
+  font-size: 8vw;
+  color: #ececed;
+  margin: 10% 0 0 0;
+  z-index: 10;
+  @extend .unboundFont
+}
+.container {
+  width: 70vw;
+  height: 60vh;
+  margin: 15% 0% 0% 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.location {
+  //font-size: 3vw;
+  //font-weight: bold;
+  //color: #9c8d68;
+  display: flex;
+  align-items: center;
+}
+.location::after {
+  content: '\1F4CD'; /* Иконка местоположения */
+  margin-left: 10px;
+}
+.contact, .hours {
+  font-size: 1.2vw;
+  width: 33vw;
+  color: #b6b6b6;
+}
+.headerContacts {
+  font-size: 2vw;
+  text-transform: uppercase;
+  color: #d6d6d6;
+  margin-bottom: 5px;
+  @extend .unboundFontLight
+}
+.contact p {
+  margin: 5px 0;
+}
+.contact p strong {
+  color: #ffffff;
+}
+.contact p a {
+  color: #808080;
+  text-decoration: none;
+}
+.contact p a:hover {
+  text-decoration: underline;
+}
+
+.hours ul {
+  list-style: none;
+  padding: 0;
+}
+.hours li {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 0;
+}
