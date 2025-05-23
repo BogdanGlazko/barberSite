@@ -15,15 +15,12 @@ function Main() {
     return (
         <>
             <div className={s.mainWrapper}>
-                <div className={s.gradient}>
-
-                </div>
                 {/*<NavBar/>*/}
                 <MainLogo/>
-                {/*<BookAndImage/>*/}
                 {/*<GradientComponent/>*/}
                 {/*<GradientSeparatorPage/>*/}
                 <ParallaxEffect childComponent={<InfoBlocks/>}/>
+                {/*<InfoBlocks/>*/}
                 {/*<GradientSeparatorBottomPage/>*/}
                 <Master/>
                 <BarberGallery/>

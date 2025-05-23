@@ -9,9 +9,13 @@ const InfoBlock = ({blockName, propsPrices}:InfoBlockProps) => {
     return (
         <>
             <div className={s.dl}>
+
                 <div className={s.hn}>{blockName}</div>
+
                 <div className={s.priceWrapper}>
-                    <div className={s.dt}>price</div>
+
+
+
                     <div className={s.dd}>
                         <div className={s.pricesBlock}>
                             {propsPrices?.map(({name, price})=>(
@@ -22,6 +26,8 @@ const InfoBlock = ({blockName, propsPrices}:InfoBlockProps) => {
                             ))}
                         </div>
                     </div>
+
+                    <div className={s.dt}>price</div>
                 </div>
 
             </div>

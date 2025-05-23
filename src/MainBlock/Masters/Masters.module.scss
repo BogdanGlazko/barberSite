@@ -2,12 +2,19 @@
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 5%;
-  height: 80vh;
+  margin-top: 45%;
+  height: 100vh;
   width: 100%;
-  background: linear-gradient(0deg, rgb(15 15 15) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgb(15 15 15) 100%), url(/src/assets/barberPhotos/IMG_1058.jpg) no-repeat center / cover;
+  background: linear-gradient(0deg, rgb(15, 15, 15) 0%, rgb(28 29 32 / 0%) 50%, rgba(0, 0, 0, 0) 50%, rgb(15, 15, 15) 100%), url(/src/assets/barberPhotos/IMG_1058.jpg) no-repeat center / cover;
+  @media (max-width: 480px) {
+    margin-top: 15%;
+  }
+  @media (max-width: 480px) and (max-height: 670px) {
+      margin-top: 40%; /* приоритет по высоте */
+  }
 }
 
 .sliderWrapper {
@@ -16,10 +23,13 @@
 }
 
 .title {
-  font-size: 8vw;
   color: #ececed;
-  margin: -12% 0 0% 0;
-  @extend .unboundFont
+  margin-top: -20%;
+  font-size: clamp(32px, 5vw, 164px);
+  @extend .unboundFont;
+  @media (max-width: 480px) {
+    margin-bottom: 25%;
+  }
 }
 
 .mastersList {
@@ -32,8 +42,8 @@
 .masterCard {
   min-width: 25vw;
   background: #00000094;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgb(26 26 26 / 40%);
+  //border-radius: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s ease;

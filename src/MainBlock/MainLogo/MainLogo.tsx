@@ -2,15 +2,17 @@ import s from '../MainLogo/MainLogo.module.scss';
 import logo from "../../assets/mainLogoImages/noBackgr.png"
 import lamp from "../../assets/mainLogoImages/barberLamp.jpg";
 import BookAndImage from "../bookingAndImage/BookAndImage.tsx";
+import StarBackground from "../../AdditionalComponents/StarEffect/StarBackground.tsx";
 const MainLogo = () => {
     return (
         <div className={s.logoWrapper}>
-
-           <img src={logo} className={s.logo}/>
+            <StarBackground/>
+            <img src={logo} className={s.logo}/>
 
             <div className={s.linesWrapper}>
+
                 <div className={s.headerLineWrap1}>
-                    <div className={s.coursiveStyle}>the </div>
+                    <div className={s.coursiveStyle}>the</div>
                     <div className={s.bigBoldStyle}>BARBERSHOP</div>
                 </div>
                 <div className={s.headerLineWrap2}>

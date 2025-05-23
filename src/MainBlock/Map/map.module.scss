@@ -2,7 +2,7 @@
 
   .headerAdress{
     margin: 10% 0 -10% 10%;
-    font-size: 3.5vw;
+    font-size: clamp(18px, 3vw, 64px);
     @extend .unboundFont
   }
 
@@ -17,18 +17,31 @@
 }
 
  .gMapWrapper{
-   background: linear-gradient(0deg, rgb(15, 15, 15) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgb(15, 15, 15) 100%);
+   margin: -5% 0 4% 10%;
+   font-size: clamp(18px, 3vw, 64px);
+ }
+
+ .map iframe{
+   border-radius: 5px;
+   box-shadow: #696969 1px 1px 20px 8px;
+   height: 100%;
+ }
+
+ .map{
+   height: 70vh;
  }
 
 .mapWidthWrapper{
-  //margin: 10% 0 0 15%;
-  //width: 70vw;
+  border: #0f0f0f 120px solid;
+  @media (max-width: 768px) {
+    border: #0f0f0f 20px solid;
+  }
 }
 
 
 header {
   text-align: center;
-  font-size: 8vw;
+  font-size: clamp(34px, 5vw, 164px);
   color: #ececed;
   margin: 10% 0 0 0;
   z-index: 10;
@@ -42,6 +55,13 @@ header {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-bottom: 15%;
+  }
 }
 .location {
   //font-size: 3vw;
@@ -55,12 +75,18 @@ header {
   margin-left: 10px;
 }
 .contact, .hours {
-  font-size: 1.2vw;
+  font-size: clamp(10px, 1.2vw, 24px);
   width: 33vw;
   color: #b6b6b6;
+  @media (max-width: 480px) {
+    width: 70vw;
+  }
+}
+.contact{
+  margin-right: 10%;
 }
 .headerContacts {
-  font-size: 2vw;
+  font-size: clamp(14px, 2vw, 44px);
   text-transform: uppercase;
   color: #d6d6d6;
   margin-bottom: 5px;
