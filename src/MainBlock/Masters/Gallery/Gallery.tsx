@@ -2,15 +2,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import s from "./gallery.module.scss";
 
 // Import Swiper styles
-// @ts-ignore
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import 'swiper/scss';
-// @ts-ignore
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import 'swiper/scss/pagination';
 import {Mousewheel, Pagination} from "swiper/modules";
-import img1 from "../../../assets/barberPhotos/IMG_1057.jpg";
-import img2 from "../../../assets/barberPhotos/IMG_1061.jpg";
-import img3 from "../../../assets/barberPhotos/IMG_1056.jpg";
-import img4 from "../../../assets/barberPhotos/IMG_1058.jpg";
+import img1 from "@/assets/barberPhotos/IMG_1057.jpg";
+import img2 from "@/assets/barberPhotos/IMG_1061.jpg";
+import img3 from "@/assets/barberPhotos/IMG_1056.jpg";
+import img4 from "@/assets/barberPhotos/IMG_1058.jpg";
 
 // import required modules
 const Gallery = () => {

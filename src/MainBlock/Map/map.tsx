@@ -1,8 +1,6 @@
 import React from "react";
 import s from "./map.module.scss"
 import {RevealOnScroll} from "../../AdditionalComponents/RevealOnScroll/RevealOnScroll.tsx";
-// Пример стилей для карты
-
 
 const Map: React.FC = () => {
 

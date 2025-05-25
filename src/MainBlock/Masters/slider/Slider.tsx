@@ -1,7 +1,7 @@
 import styles from "./Slider.module.scss";
-import artemPhoto from "../../../assets/barberPhotos/artem.jpg";
-import dimaPhoto from "../../../assets/barberPhotos/dima.jpg";
-import valeraPhoto from "../../../assets/barberPhotos/poc.jpg";
+import artemPhoto from "@/assets/barberPhotos/artem.jpg";
+import dimaPhoto from "@/assets//barberPhotos/dima.jpg";
+import valeraPhoto from "@/assets//barberPhotos/poc.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment

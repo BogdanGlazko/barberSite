@@ -1,5 +1,5 @@
 import s from '../MainLogo/MainLogo.module.scss';
-import logo from "../../assets/mainLogoImages/noBackgr.png"
+import logo from "@/assets/mainLogoImages/noBackgr.png"
 import lamp from "../../assets/mainLogoImages/barberLamp.jpg";
 import BookAndImage from "../bookingAndImage/BookAndImage.tsx";
 import StarBackground from "../../AdditionalComponents/StarEffect/StarBackground.tsx";

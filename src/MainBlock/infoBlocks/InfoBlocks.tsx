@@ -42,9 +42,6 @@ const InfoBlocks = () => {
 
     return (
         <>
-
-
-
             <div className={s.container}
                  style={{ '--bg-url': `url(${backImg})` } as React.CSSProperties}
             >
@@ -82,8 +79,6 @@ const InfoBlocks = () => {
                         />
                         </RevealOnScroll>
                     ))}
-
-
             </div>
         </>
 
