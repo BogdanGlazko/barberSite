@@ -1,6 +1,4 @@
-import NavBar from "./navBar/NavBar.tsx";
 import MainLogo from "./MainLogo/MainLogo.tsx";
-import BookAndImage from "./bookingAndImage/BookAndImage.tsx";
 import InfoBlocks from "./infoBlocks/InfoBlocks.tsx";
 import ParallaxEffect from "../AdditionalComponents/ParallaxEffect.tsx";
 import Footer from "./footer/footer.tsx";
@@ -15,17 +13,10 @@ function Main() {
     return (
         <>
             <div className={s.mainWrapper}>
-                {/*<NavBar/>*/}
                 <MainLogo/>
-                {/*<GradientComponent/>*/}
-                {/*<GradientSeparatorPage/>*/}
                 <ParallaxEffect childComponent={<InfoBlocks/>}/>
-                {/*<InfoBlocks/>*/}
-                {/*<GradientSeparatorBottomPage/>*/}
                 <Master/>
                 <BarberGallery/>
-
-                {/*<ParallaxEffect childComponent={<InfoBlocks/>}/>*/}
                 <Map/>
                 <Footer/>
 

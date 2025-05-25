@@ -4,8 +4,14 @@ import dimaPhoto from "../../../assets/barberPhotos/dima.jpg";
 import valeraPhoto from "../../../assets/barberPhotos/poc.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import "swiper/css";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import "swiper/css/navigation";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import "swiper/css/pagination";
 import {RevealOnScroll} from "../../../AdditionalComponents/RevealOnScroll/RevealOnScroll.tsx";
 

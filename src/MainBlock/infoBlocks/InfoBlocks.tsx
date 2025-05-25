@@ -1,6 +1,7 @@
 import s from '../infoBlocks/InfoBlocks.module.scss'
 import InfoBlock from "./Infoblock.tsx";
 import {RevealOnScroll} from "../../AdditionalComponents/RevealOnScroll/RevealOnScroll.tsx";
+import backImg from '@/assets/barberPhotos/IMG_1056.jpg';
 
 
 const InfoBlocks = () => {
@@ -44,7 +45,9 @@ const InfoBlocks = () => {
 
 
 
-            <div className={s.container}>
+            <div className={s.container}
+                 style={{ '--bg-url': `url(${backImg})` } as React.CSSProperties}
+            >
                 <RevealOnScroll
                     animation="zoom"
                 >
