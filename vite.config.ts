@@ -1,9 +1,22 @@
+// import { defineConfig } from 'vite';
+// import react from '@vitejs/plugin-react';
+// import path from "path";
+//
+//
+// export default defineConfig({
+//   base: '/barberSite/',
+//   plugins: [react()],
+//   resolve: {
+//     alias: {
+//       '@': path.resolve(__dirname, 'src'),
+//     },
+//   },
+// });
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import * as path from "node:path";
+import path from 'path';
 
 export default defineConfig({
-  base: '/barberSite/',
   plugins: [react()],
   resolve: {
     alias: {
