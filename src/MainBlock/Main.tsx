@@ -1,6 +1,5 @@
 import MainLogo from "./MainLogo/MainLogo.tsx";
 import InfoBlocks from "./infoBlocks/InfoBlocks.tsx";
-import ParallaxEffect from "../AdditionalComponents/ParallaxEffect.tsx";
 import Footer from "./footer/footer.tsx";
 import s from "../MainBlock/Main.module.scss"
 import Master from "./Masters/Master.tsx";
@@ -13,7 +12,8 @@ function Main() {
         <>
             <div className={s.mainWrapper}>
                 <MainLogo/>
-                <ParallaxEffect childComponent={<InfoBlocks/>}/>
+                <InfoBlocks/>
+                {/*<ParallaxEffect childComponent={<InfoBlocks/>}/>*/}
                 <Master/>
                 <BarberGallery/>
                 <Map/>

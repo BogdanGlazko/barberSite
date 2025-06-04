@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
-  padding: 0 10%;
+  padding: 0 7%;
   background-color: #1b1b1b;
 
   grid-template-areas:
@@ -39,6 +39,7 @@
       "img5"
       "img6";
     gap: 8px;
+    padding: 0 2%;
   }
 }
 
@@ -56,9 +57,9 @@
       height: 50vh;
     }
 
-    @media (max-width: 480px) {
-      height: 25vh;
-    }
+    //@media (max-width: 480px) {
+    //  height: 50vh;
+    //}
   }
 }
 
@@ -75,6 +76,6 @@
   text-align: center;
   font-size: clamp(34px, 5vw, 164px);
   color: #ececed;
-  margin: 10% 0 0 0;
+  margin: 30% 0 0 0;
   @extend .unboundFont
 }

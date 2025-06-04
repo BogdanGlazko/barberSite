@@ -5,21 +5,27 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 45%;
-  height: 100vh;
+  margin-top: 20%;
+  //height: 100vh;
   width: 100%;
-  background: linear-gradient(0deg, rgb(15, 15, 15) 0%, rgb(28 29 32 / 0%) 50%, rgba(0, 0, 0, 0) 50%, rgb(15, 15, 15) 100%), url(/src/assets/barberPhotos/IMG_1058.jpg) no-repeat center / cover;
+  background: linear-gradient(0deg, rgb(15, 15, 15) 0%, rgb(28 29 32 / 0%) 50%, rgba(0, 0, 0, 0) 50%, rgb(15, 15, 15) 100%), url(../../assets/barberPhotos/IMG_1058.jpg) no-repeat center / cover;
   @media (max-width: 480px) {
-    margin-top: 15%;
+    //height: 70vh;
+    margin-top: 35%;
+
   }
   @media (max-width: 480px) and (max-height: 670px) {
-      margin-top: 40%; /* приоритет по высоте */
+    margin-top: 45%;
+
   }
 }
 
 .sliderWrapper {
   margin-left: 5%;
-  width: 75%;
+  width: 65%;
+  @media (max-width: 480px){
+    width: 55%;
+  }
 }
 
 .title {

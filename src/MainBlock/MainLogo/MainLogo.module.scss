@@ -1,35 +1,50 @@
 @use '../../styles/globals.scss';
 
-.logoWrapper{
+.logoWrapper {
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-shadow: .2px 1px 1px #ffffff;
-  padding: 0 30% 0 30%;
-  margin-bottom: -15%;
-  @media (max-width: 768px){
-    padding: 0 15% 0 10%;
-    height: 110vh;
+  text-shadow: 0.2px 1px 1px #ffffff;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  width: 100%;
+
+
+  @media (max-width: 1068px) {
+    margin-bottom: -5%;
+  }
+  @media (max-width: 468px) {
+    padding: 0 1rem;
+  }
+  @media (max-width: 378px) {
+    padding: 0 1rem;
   }
 
-  .logo{
-    max-width: 35vh;
-    height: 100%;
-    margin-top: 7%;
-    margin-bottom: 30px;
-    object-fit: cover;
+  .logo {
+    width: clamp(150px, 15vw, 450px);
+    height: auto;
+    margin-top: 3%;
+    margin-bottom: 20px;
+    object-fit: contain;
     z-index: 10;
 
-    @media (max-width: 768px){
-      max-width: 60vw;
-      margin-bottom: 10%;
-      height: 8%;
+    @media (max-width: 1068px) {
+      margin-top: 15%;
     }
-    @media (max-width: 425px){
-      max-width: 60vw;
+    @media (orientation: portrait) and (min-width: 600px) and (max-width: 1370px) {
+      width: clamp(150px, 35vw, 450px);
+      margin-top: 25%;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 3%;
+    }
+
+    @media (max-width: 425px) {
+      margin-top: 5%;
       margin-bottom: 25px;
     }
   }
@@ -37,6 +52,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 60%;
+
+    @media (orientation: portrait) and (min-width: 600px) and (max-width: 1370px) {
+      margin-bottom: 20%;
+    }
+
+    @media (max-width: 468px) {
+      width: 80%;
+    }
+    @media (max-width: 768px) {
+      width: 80%;
+    }
   }
   .linesWrapper :nth-child(1){
     //margin-bottom: -20px;
@@ -46,11 +73,30 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 50%;
+    margin-bottom: 25%;
+    @media (orientation: portrait) {
+      width: 90vw;
+    }
+    @media (max-width: 1068px) {
+      font-size: clamp(18px, 2.2vw, 24px);
+      width: 70vw;
+      margin-bottom: 35%;
+    }
+    @media (orientation: portrait) {
+      width: 85vw;
+    }
+    @media (max-width: 768px) {
+      margin-top: 5%;
+    }
+    @media (max-width: 520px) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15%;
+    }
   }
 
   .logoImage > img {
-    width: 35%;
+    width: clamp(120px, 14vw, 370px  );
     margin: -1% 0 0 3%;
     z-index: 10;
     transform: rotateY(5deg) rotateZ(25deg) perspective(300px) scale(1.1);
@@ -58,17 +104,21 @@
     border-radius: 3px;
     box-shadow: 5px -6px 7px 0px #000000;
 
-    //@media (max-width: 768px) {
-    //  margin-top: -12%;
-    //}
-    @media (max-width: 480px) {
+    @media (orientation: portrait) and (min-width: 600px) and (max-width: 1370px) {
+      width: clamp(120px, 24vw, 370px  );
+
+    }
+    @media (max-width: 468px) {
+      width: clamp(160px, 20vw, 200px);
     margin-top: -12%;
     }
     @media (max-width: 390px) {
-      margin-top: -40%;
+      width: clamp(140px, 20vw, 200px);
+      margin-top: -10%;
     }
     @media (max-width: 320px) {
-      margin-top: -45%;
+      width: clamp(130px, 20vw, 200px);
+      margin-top: -8%;
     }
   }
   .logoImage >img {
@@ -124,11 +174,15 @@
     display: flex;
     flex-direction: row;
     line-height: normal;
-    font-size: calc(42px + 68 * (100vw - 320px) / 1670);
+    font-size: clamp(42px, 5vw, 120px);
+    justify-content: center;
+
+    @media (orientation: portrait) and (min-width: 801px) and (max-width: 1370px){
+      font-size: clamp(38px, 9vw, 120px);
+    }
 
     @media (max-width: 800px) {
-      font-size: calc(32px + 68 * (100vw - 320px) / 1670);
-      //margin: 0 15;
+      font-size: clamp(38px, 6vw, 120px);
     }
 
     .coursiveStyle{

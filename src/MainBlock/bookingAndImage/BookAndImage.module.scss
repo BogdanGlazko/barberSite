@@ -2,27 +2,55 @@
 $c: #ffffff;
 
 .mainWrapper {
-  //max-width: 90%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   margin-top: -10%;
+  width: 40vw;
   @extend  .poppinsRegular;
+
+  @media (orientation: portrait) and (min-width: 600px) and (max-width: 1370px) {
+    width: 80vw;
+    }
+
+  @media (max-width: 520px) {
+    justify-content: center;
+    width: 105vw;
+  }
 
   .textBtnWrapper {
     width: 80%;
     letter-spacing: .2pt;
-    padding-top: 20%;
-    font-size: clamp(8px, 1.2vw, 24px);
+    padding-top: 15%;
+    font-size: clamp(12px, 1.3vw, 42px);
     z-index: 1;
     @extend .unboundFontLight;
 
+
+    @media (max-width: 1068px) {
+      text-shadow: 0.1px 0 0 #ffffff;
+      letter-spacing: .2pt;
+      font-size: clamp(12px, 1.4vw, 42px);
+    }
+    @media (orientation: portrait) and (min-width: 600px) and (max-width: 1370px) {
+      font-size: clamp(12px, 2.6vw, 42px);
+    }
+
+
+
     :nth-child(1) {
-      margin-bottom: 35px;
       text-align: justify;
+      @media (max-width: 1068px) {
+        //font-size: clamp(18px, 2.2vw, 24px);
+      }
+      @media (max-width: 468px) {
+        margin-bottom: 10%;
+        //font-size: clamp(14px, 1.2vw, 24px);
+      }
       @media (max-width: 376px) {
-        margin-bottom: 20%;
+        margin-bottom: 0;
+        //font-size: clamp(12px, 1.2vw, 24px);
       }
     }
   }
@@ -30,6 +58,11 @@ $c: #ffffff;
 
 .logoImage {
   position: relative;
+  @media (max-width: 1068px) {
+    font-size: clamp(18px, 2.2vw, 24px);
+    width: 90vw;
+  }
+
 }
 
 .logoImage > img {
@@ -45,16 +78,16 @@ $c: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (max-width: 376px) {
-    margin-left: -70%;
-  }
+  //@media (max-width: 376px) {
+  //  margin-left: -70%;
+  //}
 }
 
 .button {
+  margin-top: 5%;
   width: 100%;
   min-height: 50%;
   display: inline-flex;
-  font-size: clamp(12px, 2vw, 24px);
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
@@ -72,10 +105,11 @@ $c: #ffffff;
   outline: none;
   position: relative;
   padding: 10px;
+
   @extend .unboundFont;
 
   @media (max-width: 700px) {
-    font-size: clamp(12px, 2vw, 24px);
+    //font-size: clamp(62px, 2vw, 24px);
     letter-spacing: 0.3px;
   }
   @media (max-width: 380px) {
@@ -96,6 +130,7 @@ $c: #ffffff;
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all .4s ease-in-out 0s;
+  font-size: clamp(12px, 2vw, 24px);
 }
 
 .button:hover,
