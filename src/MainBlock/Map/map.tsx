@@ -48,11 +48,14 @@ const Map: React.FC = () => {
             <div className={s.mapWidthWrapper}>
                 <div className={s.map}>
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad704259676c4e15a6084073ea0567a7ec047e1b8478fd8c1a1967f52144a31fd&amp;source=constructor"
-                            width="100%">
+                            width="100%"
+                            frameBorder="0">
                     </iframe>
                 </div>
             </div>
         </>
+
+
     )
         ;
 };
