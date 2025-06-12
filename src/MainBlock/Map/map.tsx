@@ -53,8 +53,6 @@ const Map: React.FC = () => {
                 </div>
             </div>
         </>
-
-
     )
         ;
 };
