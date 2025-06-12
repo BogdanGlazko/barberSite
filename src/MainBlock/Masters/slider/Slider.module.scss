@@ -2,7 +2,7 @@
 
 .masterImage {
   max-width: 80%;
-  box-shadow: 0px 2px 11px 3px #252525;
+  box-shadow: 0 2px 11px 3px #252525;
   border-radius: 10px;
   filter: brightness(75%);
   @media (max-width: 1200px) {
@@ -15,6 +15,9 @@
 
 .masterPhoto {
   border-radius: 30px;
+  img{
+    height: 100%;
+  }
 }
 .masterName {
   margin-top: -17%;

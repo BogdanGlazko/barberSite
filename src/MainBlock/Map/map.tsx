@@ -16,11 +16,11 @@ const Map: React.FC = () => {
 
                     <div className={s.contact}>
                         <RevealOnScroll animation="slide-right">
-                        <div className={` ${s.headerContacts} ${s.unboundFont}`}>Г.Гродно Ул Янки Купалы, 10</div>
-                        <p><strong>Телефон:</strong> <a href="tel:18446367288">1-844-636-7288</a></p>
-                        <p><strong>Email:</strong> <a href="mailto:support@capellis.com">support@capellis.com</a></p>
-                        <p className={s.italic}>Барбершоп КартБланш — это больше, чем просто стрижка. Мы создаем стиль, подчеркивая твою индивидуальность. Заходи, чтобы обновить образ и зарядиться уверенностью!
-                        </p>
+                        <div className={` ${s.headerContacts} ${s.unboundFont}`}>Г.Гродно Ул Янки Купалы, 67</div>
+                        <p><strong>Телефон:</strong> <a href="tel:18446367288">+375297415273</a></p> <br/>
+                        {/*<p><strong>Email:</strong> <a href="mailto:support@capellis.com">support@capellis.com</a></p>*/}
+                        <p className={s.italic}>На связи — по стилю и по делу. <br/>
+                            Запишись — и получи образ, который говорит за тебя.</p>
                     </RevealOnScroll>
                     </div>
 
@@ -29,13 +29,13 @@ const Map: React.FC = () => {
                         <RevealOnScroll animation="slide-left">
                         <div className={`${s.headerContacts} ${s.unboundFont}`}>Часы работы</div>
                         <ul>
-                            <li><span>Понедельник</span> <span>9 – 20</span></li>
-                            <li><span>Вторник</span> <span>9 – 20</span></li>
-                            <li><span>Среда</span> <span>9 – 20</span></li>
-                            <li><span>Четверг</span> <span>9 – 20</span></li>
-                            <li><span>Пятница</span> <span>9 – 20</span></li>
-                            <li><span>Суббота</span> <span>9 – 19</span></li>
-                            <li><span>Воскресенье</span> <span>10 – 18</span></li>
+                            <li><span>Понедельник</span> <span>10 – 21</span></li>
+                            <li><span>Вторник</span> <span>10 – 21</span></li>
+                            <li><span>Среда</span> <span>10 – 21</span></li>
+                            <li><span>Четверг</span> <span>10 – 21</span></li>
+                            <li><span>Пятница</span> <span>10 – 21</span></li>
+                            <li><span>Суббота</span> <span>10 – 21</span></li>
+                            <li><span>Воскресенье</span> <span>10 – 21</span></li>
                         </ul>
                         </RevealOnScroll>
                     </div>
@@ -48,8 +48,7 @@ const Map: React.FC = () => {
             <div className={s.mapWidthWrapper}>
                 <div className={s.map}>
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad704259676c4e15a6084073ea0567a7ec047e1b8478fd8c1a1967f52144a31fd&amp;source=constructor"
-                            width="100%"
-                            frameBorder="0">
+                            width="100%">
                     </iframe>
                 </div>
             </div>

@@ -1,7 +1,9 @@
 import styles from "./Slider.module.scss";
 import artemPhoto from "@/assets/barberPhotos/artem.jpg";
-import dimaPhoto from "@/assets//barberPhotos/dima.jpg";
-import valeraPhoto from "@/assets//barberPhotos/poc.jpg";
+import dimaPhoto from "@/assets/barberPhotos/dima.jpg";
+import valeraPhoto from "@/assets/barberPhotos/poc.jpg";
+import matvei from "@/assets/barberPhotos/matvei.jpg";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -18,7 +20,8 @@ import {RevealOnScroll} from "../../../AdditionalComponents/RevealOnScroll/Revea
 const masters = [
     { name: "Артём", photo: artemPhoto },
     { name: "Дима", photo: dimaPhoto },
-    { name: "Денис", photo: valeraPhoto }
+    { name: "Денис", photo: valeraPhoto },
+    { name: "Матвей", photo: matvei }
 ];
 
 export default function App() {

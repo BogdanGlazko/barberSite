@@ -8,7 +8,9 @@ const BookAndImage = () => {
                     Мы создаем стиль, подчеркивая твою индивидуальность.
                     Заходи, чтобы обновить образ и зарядиться уверенностью!</div>
                 <div className={s.wrap}>
-                    <button className={s.button}>Записаться</button>
+                    <a href="https://n446974.yclients.com/" target="_blank" rel="noopener noreferrer">
+                        <button className={s.button}>Записаться</button>
+                    </a>
                 </div>
             </div>
         </div>

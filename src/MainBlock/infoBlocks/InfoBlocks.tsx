@@ -9,21 +9,19 @@ const InfoBlocks = () => {
         {
             blockName: "Стрижка и бритье",
             items: [
-                {name: "Стрижка Классическая", price: 35},
-                {name: "Под Машинку", price: 20},
-                {name: "Оформление бороды", price: 25},
-                {name: "Бритьё бороды", price: 15},
-                {name: "Бритьё головы", price: 15}]
+                {name: "Стрижка Классическая", price: 40},
+                {name: "Под Машинку", price: 35},
+                {name: "Стрижка бороды", price: 35},
+                {name: "Детская стрижка", price: 35},]
         }
     ];
     const additionalServices = [
         {
-            blockName: "Дополнительные  услуги",
+            blockName: "Комплексы",
             items: [
-                {name: "Стайлинг", price: 10},
-                {name: "Камуфляж бороды", price: 20},
-                {name: "Камуфляж волос", price: 25},
-                {name: "Коррекция бровей", price: 5},
+                {name: "Борода и Стрижка", price: 60},
+                {name: "Стрижка бороды и Тонировка", price: 55},
+                {name: "Полный образ (Борода, Стрижка и Тонировка)", price: 75}
             ]
         }
     ];
@@ -31,11 +29,10 @@ const InfoBlocks = () => {
         {
             blockName: "Уход",
             items: [
-                {name: "Matt Gloss", price: 25},
-                {name: "Matt Wax", price: 25},
-                {name: "Воск-паста", price: 50},
-                {name: "Пудра", price: 20},
-                {name: "Шампунь Studio", price: 35}]
+                {name: "Паста Matt Gloss", price: 25},
+                {name: "Пудра Alpha Homme", price: 15},
+                {name: "Одеколон Nish Man", price: 20},
+                {name: "Шампунь Alpha/Marine", price: 40}]
         }
     ];
 
