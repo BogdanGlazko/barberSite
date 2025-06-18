@@ -26,10 +26,14 @@
   .logo {
     width: clamp(150px, 15vw, 450px);
     height: auto;
-    margin-top: 3%;
+    margin-top: 5%;
     margin-bottom: 20px;
     object-fit: contain;
     z-index: 10;
+
+    @media (max-width: 1440px) {
+      margin-top: 10%;
+    }
 
     @media (max-width: 1068px) {
       margin-top: 15%;
@@ -91,7 +95,7 @@
     @media (max-width: 520px) {
       display: flex;
       flex-direction: column;
-      margin-top: 15%;
+      margin-top: 19%;
     }
   }
 
