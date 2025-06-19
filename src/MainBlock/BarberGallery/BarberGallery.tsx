@@ -24,12 +24,13 @@ const BarberGallery = () => {
 
             <div className={s.wrapper}>
                 {imagesGallery.map((image, key) => (
-                    <div className={`${s.image} ${s["img" + (key + 1)]}`}>
-                        <RevealOnScroll animation="fade" delay={0.1 + key / 10} key={key}>
-                            <img src={image} alt={`barber-photo-${key}`} />
+                    <div className={`${s.image} ${s["img" + (key + 1)]}`} key={key}>
+                        <RevealOnScroll animation="fade" delay={0.1 + key / 10}>
+                            <div className={s.hoverImageScale}>
+                                <img src={image} alt={`barber-photo-${key}`} />
+                            </div>
                         </RevealOnScroll>
                     </div>
-
                 ))}
             </div>
 

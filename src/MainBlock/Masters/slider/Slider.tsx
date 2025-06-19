@@ -50,14 +50,19 @@ export default function App() {
 
         >
                 {masters.map((master, index) => (
-                        <SwiperSlide key={index} className={styles.masterCard}>
-                            <RevealOnScroll animation="zoom">
-                                <div className={styles.masterPhoto}>
-                            <img src={master.photo} alt={master.name} className={styles.masterImage} />
-                            <div className={styles.masterName}>{master.name}</div>
-                        </div>
-                            </RevealOnScroll>
+                    <SwiperSlide key={index} className={styles.masterCard}>
+                        <RevealOnScroll animation="zoom">
+                            <div className={styles.hoverEffectBtn}>
+                                <img src={master.photo} alt={master.name} className={styles.masterImage} />
+                                <h3 className={styles.title}>{master.name}</h3>
+                                <div className={styles.overlay}></div>
+                                <div className={styles.button}>
+                                    <a href="#">Записаться</a>
+                                </div>
+                            </div>
+                        </RevealOnScroll>
                     </SwiperSlide>
+
                 ))}
         </Swiper>
     );
