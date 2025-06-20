@@ -18,10 +18,10 @@ import "swiper/css/pagination";
 import {RevealOnScroll} from "../../../AdditionalComponents/RevealOnScroll/RevealOnScroll.tsx";
 
 const masters = [
-    { name: "Артём", photo: artemPhoto },
-    { name: "Дима", photo: dimaPhoto },
-    { name: "Денис", photo: valeraPhoto },
-    { name: "Матвей", photo: matvei }
+    { name: "Артём", photo: artemPhoto, link: "https://n446974.yclients.com/company/423718/personal/select-master?o=m1234300" },
+    { name: "Дима", photo: dimaPhoto , link: "https://n446974.yclients.com/company/423718/personal/select-master?o=m1234356"},
+    { name: "Денис", photo: valeraPhoto, link: "https://n446974.yclients.com/company/423718/personal/select-master?o=m1519686" },
+    { name: "Матвей", photo: matvei, link: "https://n446974.yclients.com/company/423718/personal/select-master?o=m3301456" }
 ];
 
 export default function App() {
@@ -57,7 +57,7 @@ export default function App() {
                                 <h3 className={styles.title}>{master.name}</h3>
                                 <div className={styles.overlay}></div>
                                 <div className={styles.button}>
-                                    <a href="#">Записаться</a>
+                                    <a href={master.link}>Записаться</a>
                                 </div>
                             </div>
                         </RevealOnScroll>

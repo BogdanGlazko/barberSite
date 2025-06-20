@@ -1,0 +1,64 @@
+.floatingBar {
+  position: fixed;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  z-index: 999;
+  @media (max-width: 1068px) {
+    top: 45%;
+    right: 2%;
+  }
+  @media (max-width: 680px) {
+    top: 25%;
+  }
+  @media (max-width: 380px) {
+    top: 15%;
+    right: 1%;
+  }
+}
+
+.instaBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(119, 119, 119, 0.52);
+}
+
+.instaBlock img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.instaBlock img:hover {
+  opacity: 1;
+}
+
+.instaBlock span {
+  writing-mode: vertical-rl;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-top: 12px;
+}
+
+.scrollTopButton {
+  padding: 4px 8px;
+  font-size: 16px;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.scrollTopButton:hover {
+  opacity: 1;
+}

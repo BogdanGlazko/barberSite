@@ -179,3 +179,38 @@ footer {
 .button:focus::before {
   opacity: 1;
 }
+
+//
+//.instagramWrapper {
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  margin-top: 1rem;
+//}
+//
+//.instagramIcon {
+//  width: 32px;
+//  height: 32px;
+//  transition: opacity 0.3s ease;
+//}
+//
+//.instagramIcon:hover {
+//  opacity: 0.7;
+//  cursor: pointer;
+//}
+//.instagramFixed {
+//  position: fixed;
+//  top: 50%;
+//  right: 5%; /* можно заменить на right: 20px — будет справа */
+//  transform: translateY(-50%);
+//  z-index: 999;
+//  width: 32px;
+//  height: 32px;
+//  opacity: 0.8;
+//  transition: opacity 0.3s ease;
+//}
+//
+//.instagram-fixed:hover {
+//  opacity: 1;
+//  cursor: pointer;
+//}
