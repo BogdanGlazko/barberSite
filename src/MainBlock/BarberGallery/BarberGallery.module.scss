@@ -15,15 +15,15 @@
 
   grid-template-areas:
     "img1 img1 img2 img2"
-    "img3 img3 img3 img3"
-    "img4 img5 img5 img5"
-    "img6 img6 img6 img6";
+    "img6 img6 img6 img6"
+    "img3 img3 img4 img4"
+    "img5 img5 img5 img5";
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "img3 img3"
-      "img2 img1"
+      "img1 img1"
+      "img2 img3"
       "img5 img4"
       "img6 img6";
     gap: 10px;
@@ -34,10 +34,10 @@
     grid-template-areas:
       "img1"
       "img2"
-      "img3"
       "img4"
-      "img5"
-      "img6";
+      "img3"
+      "img6"
+      "img5";
     gap: 8px;
     padding: 0 2%;
   }

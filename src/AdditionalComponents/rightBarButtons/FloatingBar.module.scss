@@ -8,17 +8,16 @@
   align-items: center;
   gap: 16px;
   z-index: 999;
-  @media (max-width: 1068px) {
-    top: 45%;
-    right: 2%;
-  }
-  @media (max-width: 680px) {
-    top: 25%;
-  }
-  @media (max-width: 380px) {
+  transition: opacity 0.5s ease;
+  @media (max-width: 440px) {
     top: 15%;
     right: 1%;
   }
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .instaBlock {
@@ -27,6 +26,11 @@
   align-items: center;
   text-decoration: none;
   color: rgba(119, 119, 119, 0.52);
+  z-index: 999;
+  cursor: pointer;
+  :hover{
+    color: #afafaf;
+  }
 }
 
 .instaBlock img {

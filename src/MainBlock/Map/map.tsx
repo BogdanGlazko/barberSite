@@ -17,8 +17,7 @@ const Map: React.FC = () => {
                     <div className={s.contact}>
                         <RevealOnScroll animation="slide-right">
                         <div className={` ${s.headerContacts} ${s.unboundFont}`}>Г.Гродно Ул Янки Купалы, 67</div>
-                        <p><strong>Телефон:</strong> <a href="tel:18446367288">+375297415273</a></p> <br/>
-                        {/*<p><strong>Email:</strong> <a href="mailto:support@capellis.com">support@capellis.com</a></p>*/}
+                        <p><strong>Телефон:</strong> <a href="tel:375297415273">+375297415273</a></p> <br/>
                         <p className={s.italic}>На связи — по стилю и по делу. <br/>
                             Запишись — и получи образ, который говорит за тебя.</p>
                     </RevealOnScroll>

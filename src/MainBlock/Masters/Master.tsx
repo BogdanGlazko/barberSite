@@ -4,7 +4,6 @@ import Slider from "./slider/Slider.tsx";
 import {RevealOnScroll} from "../../AdditionalComponents/RevealOnScroll/RevealOnScroll.tsx";
 
 
-
 const Masters: React.FC = () => {
     return (
         <section className={s.container}>
