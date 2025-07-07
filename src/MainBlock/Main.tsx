@@ -8,7 +8,6 @@ import Map from "./Map/map.tsx";
 import FloatingBarTrigger from "../AdditionalComponents/rightBarButtons/FloatingBarTrigger.tsx";
 
 
-
 function Main() {
 
     return (

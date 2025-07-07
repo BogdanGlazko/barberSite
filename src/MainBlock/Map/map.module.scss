@@ -6,7 +6,6 @@
     @extend .unboundFont
   }
 
-
 .mapWrapper {
   width: 100%;
   margin: 20px auto;
@@ -15,29 +14,24 @@
   filter: brightness(100%);
   background: linear-gradient(0deg, rgb(15, 15, 15) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgb(15, 15, 15) 100%), url(../../assets/barberPhotos/g1.jpg) no-repeat center / cover;
 }
-
  .gMapWrapper{
    margin: 5% 0 4% 10%;
    font-size: clamp(18px, 3vw, 64px);
  }
-
  .map iframe{
    border-radius: 5px;
    box-shadow: #696969 1px 1px 20px 8px;
    height: 100%;
  }
-
  .map{
    height: 70vh;
  }
-
 .mapWidthWrapper{
   border: #0f0f0f 120px solid;
   @media (max-width: 768px) {
     border: #0f0f0f 20px solid;
   }
 }
-
 
 header {
   text-align: center;
@@ -69,7 +63,7 @@ header {
   align-items: center;
 }
 .location::after {
-  content: '\1F4CD'; /* Иконка местоположения */
+  content: '\1F4CD';
   margin-left: 10px;
 }
 .contact, .hours {
